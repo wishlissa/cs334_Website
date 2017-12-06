@@ -1,0 +1,53 @@
+CREATE TABLE skis(
+    brand VARCHAR(30),
+    color VARCHAR(15),
+    price DECIMAL(7,2),
+    productID VARCHAR(30) PRIMARY KEY
+    );
+CREATE TABLE skiShopCustomers(
+    lastName VARCHAR(30),
+    firstName VARCHAR(30),
+    streetAddress1 VARCHAR(50),
+    streetAddress2 VARCHAR(50),
+    city VARCHAR(30),
+    state VARCHAR(2),
+    postalCode VARCHAR(5),
+    email VARCHAR(30),
+    userID VARCHAR(30) PRIMARY KEY
+    password VARCHAR(30)
+);
+
+INSERT INTO `skiShopCustomers`(`lastName`, `firstName`, `streetAddress1`, `streetAddress2`, `city`, `state`, `postalCode`, `email`, `userID`, `password`) VALUES ('Pallotti', 'Melissa', '3333 Forbes Ave', 'Apt 848', 'Pittsburgh', 'PA', '15213', 'mrp82@pitt.edu', 'mrp82', 'password1'),
+('Pallotti', 'Melanie', '5671 W Creeks Edge Dr', ' ', 'Boise', 'ID', '83714', 'melaniep@pallotti.com', 'melaniep', 'pa55word'),
+('Pallotti', 'Elizabeth', '5671 W Creeks Edge Dr', ' ', 'Boise', 'ID', '83714', 'lizzie@pallotti.com', 'lizziep', 'passw0rd');
+
+INSERT INTO `skis`(`brand`, `color`, `price`, `productID`) VALUES
+	('Nordica', 'Other', '649.95', 'enforcer93'),
+	('Nordica', 'Blue', '499.99', 'navigator95'),
+	('Nordica', 'Orange', '699.99', 'enforcer100'),
+	('K2', 'White', '179.00', 'strikefasttrack3'),
+	('K2', 'Blue', '299.97', 'pinnacle88'),
+	('K2', 'Blue', '509.99', 'luvsick80ti'),
+	('K2', 'Green', '1000.00', 'ikonic80ti'),
+	('Rossignol', 'Green', '800.00', 'experience88hd'),
+	('Line', 'Green', '950.00', 'magnumopus'),
+	('Line', 'Other', '1050.00', 'pescado'),
+	('Line', 'Black', '750.00', 'blend'),
+	('Line', 'Black', '500.00', 'honeybadger'),
+	('Line', 'Black', '450.00', 'tigersnake'),
+	('Fischer', 'Black', '399.00', 'ranger98ti'),
+	('Volkl', 'Red', '1109.00', 'racetigergs'),
+	('Volkl', 'Yellow', '999.00', 'racetigerslr'),
+	('Salomon', 'White', '699.95', 'mtnexplore95'),
+	('Dynastar', 'Orange', '750.00', 'speedzone6xpress'),
+	('Armada', 'Orange', '650.00', 'tracer88'),
+	('Armada', 'Violet', '875.00', 'magicj'),
+	('Armada', 'Green', '700.00', 'edollo'),
+	('Armada', 'Orange', '475.00', 'invictus85'),
+	('4FRNT', 'Blue', '799.00', 'raven'),
+	('4FRNT', 'Green', '799.00', 'renegade'),
+	('4FRNT', 'Orange', '599.00', 'hoji'),
+	('Icelantic', 'Violet', '699.00', 'maideniii'),
+	('Nordica', 'Red', '500.00', 'dobermannspitfirepro'),
+	('Nordica', 'Violet', '649.99', 'santaana'),
+	('Nordica', 'Blue', '499.99', 'astral84');
